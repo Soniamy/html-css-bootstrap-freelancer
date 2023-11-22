@@ -18,3 +18,11 @@ a {
 .bg-main {
     background-color: #19bc9b;
 }
+.bg-header-footer {
+    background-color: #3b536d;
+    padding: 20px;
+}
+.bg-footer {
+    background-color: #2c3e4f;
+    padding: 20px;
+}
