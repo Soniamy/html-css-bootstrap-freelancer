@@ -24,27 +24,52 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700;900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+        />
     </head>
     <body>
         <header class="container-fluid text-light">
             <div class="container-lg container-md container-sm text-center">
-                <div class="row alain-item-center">
-                    <div class="col fs-4">START BOOTSTRAP</div>
-                    <div
-                        class="col col-lg-offset-4 col-md-offset-4 col-sm-offset-0"
+                <div class="row">
+                    <nav
+                        class="navbar navbar-expand-md bg-nav border-bottom border-body"
+                        data-bs-theme="dark"
                     >
-                        <ul>
-                            <li>
-                                <a class="fs-6" href="#">Portfolio</a>
-                            </li>
-                            <li>
-                                <a class="fs-6" href="#">About</a>
-                            </li>
-                            <li>
-                                <a class="fs-6" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                            <button
+                                class="navbar-toggler"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent"
+                                aria-expanded="false"
+                                aria-label="Toggle navigation"
+                            >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div
+                                class="collapse navbar-collapse"
+                                id="navbarSupportedContent"
+                            >
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"
+                                            >Portfolio</a
+                                        >
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -59,16 +84,15 @@
                         />
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title text-light">START BOOTRAP</h5>
-                        <div class="icon">
-                            <div></div>
-                            <i
-                                class="fa-solid fa-star"
-                                style="color: #ffffff"
-                            ></i>
-                            <div></div>
+                        <h5 class="card-title text-light fs-1 mb-2">
+                            START BOOTRAP
+                        </h5>
+                        <div class="icon d-flex justify-content-center">
+                            <div class="bar bar-white"></div>
+                            <i class="bi bi-star-fill pb-2"></i>
+                            <div class="bar bar-white"></div>
                         </div>
-                        <p class="card-text text-light">
+                        <p class="card-text text-light fs-5 mt-3">
                             GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATION
                         </p>
                     </div>
@@ -77,95 +101,97 @@
             <div class="container-fluid bg-main-column">
                 <div class="container-lg container-md container-sm">
                     <div class="title-text text-center text-black">
-                        <h5 class="title text-black mt-5">PORTFOLIO</h5>
-                        <div class="icon">
-                            <div></div>
-                            <i class="fa-solid fa-star" style="color: #000"></i>
-                            <div></div>
+                        <h5 class="title text-black mt-5 fs-2">PORTFOLIO</h5>
+                        <div class="icon d-flex justify-content-center">
+                            <div class="bar bar-black"></div>
+                            <i class="bi bi-star-fill pb-2 text-black"></i>
+                            <div class="bar bar-black"></div>
                         </div>
                     </div>
                     <div class="row justify-content-center text-center">
-                        <div class="col-lg-4 col-md-6 col-sm-1">
-                            <img
-                                class="img-thumbnail"
-                                src="assets/images/cabin.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-1">
-                            <img
-                                class="img-thumbnail"
-                                src="assets/images/cake.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-1">
-                            <img
-                                class="img-thumbnail"
-                                src="assets/images/circus.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-1">
-                            <img
-                                class="img-thumbnail"
-                                src="assets/images/game.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-1">
-                            <img
-                                class="img-thumbnail"
-                                src="assets/images/safe.png"
-                                alt=""
-                            />
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-1">
-                            <img
-                                class="img-thumbnail"
-                                src="assets/images/submarine.png"
-                                alt=""
-                            />
+                        <div class="row g-3">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img
+                                    class="img-thumbnail"
+                                    src="assets/images/cabin.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img
+                                    class="img-thumbnail"
+                                    src="assets/images/cake.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img
+                                    class="img-thumbnail"
+                                    src="assets/images/circus.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img
+                                    class="img-thumbnail"
+                                    src="assets/images/game.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img
+                                    class="img-thumbnail"
+                                    src="assets/images/safe.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <img
+                                    class="img-thumbnail"
+                                    src="assets/images/submarine.png"
+                                    alt=""
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-fluid bg-main">
                 <div class="container-lg container-md container-sm">
-                    <div class="title-text text-center text-light">
-                        <h5 class="title py-4">ABOUT</h5>
-                        <div class="icon">
-                            <div></div>
-                            <i
-                                class="fa-solid fa-star pb-3"
-                                style="color: #ffffff"
-                            >
-                            </i>
-                            <div></div>
-                        </div>
-                        <div class="row pb-5">
-                            <div class="col-lg-6 col-md-6 col-sm-1">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Provident id odit soluta.
-                                Doloribus enim quod reprehenderit ipsa esse
-                                fuga, molestiae eum quia dolor assumenda. Unde
-                                doloribus aut expedita harum iste!
+                    <div class="title-text text-light">
+                        <div class="p-5">
+                            <h5 class="title fs-2 text-center">ABOUT</h5>
+                            <div class="icon d-flex justify-content-center">
+                                <div class="bar bar-white"></div>
+                                <i class="bi bi-star-fill pb-2"></i>
+                                <div class="bar bar-white"></div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-1">
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. Provident id odit soluta.
-                                Doloribus enim quod reprehenderit ipsa esse
-                                fuga, molestiae eum quia dolor assumenda. Unde
-                                doloribus aut expedita harum iste!
+
+                            <div class="row g-3 p-3">
+                                <div class="col-lg-6 col-md-6 col-sm-1 fs-4">
+                                    Freelancer is a free bootstrap theme created
+                                    by Start Bootstrap. The download includes
+                                    the complete source files including HTML,
+                                    CSS, and JavaScript as well as optional LESS
+                                    stylesheets for easy customization.
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-1 fs-4">
+                                    Whether you're a student looking to showcase
+                                    your work, a professional looking to attract
+                                    clients, or a graphic artist looking to
+                                    share your projects, this template is the
+                                    perfect starting point!
+                                </div>
+                                <div class="button mt-5 text-center">
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-light"
+                                    >
+                                        <i class="bi bi-download"></i>
+                                        Download
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="button pb-4">
-                            <button
-                                type="button"
-                                class="btn btn-outline-light pb-3"
-                            >
-                                button
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -173,51 +199,44 @@
             <div class="container-fluid">
                 <div class="container-lg container-md container-sm">
                     <div class="card-body pt-5">
-                        <h5 class="card-title text-black">CONTACT ME</h5>
-                        <div class="icon">
-                            <div></div>
-                            <i class="fa-solid fa-star" style="color: #000"></i>
-                            <div></div>
+                        <h5 class="card-title text-black fs-2 mb-3">
+                            CONTACT ME
+                        </h5>
+                        <div class="icon d-flex justify-content-center">
+                            <div class="bar bar-black"></div>
+                            <i class="bi bi-star-fill pb-2 text-black"></i>
+                            <div class="bar bar-black"></div>
                         </div>
                     </div>
-                    <table class="table py-4">
-                        <tbody>
-                            <tr>
-                                <th scope="row text-secondary-emphasis">
-                                    Name
-                                </th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row text-secondary-emphasis">
-                                    Email Andress
-                                </th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row text-secondary-emphasis">
-                                    Phone Number
-                                </th>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th
-                                    scope="row text-secondary-emphasis border border-bottom-0"
-                                >
-                                    Message
-                                </th>
-                                <td colspan="2"></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="button pb-4">
+                    <div>
+                        <form action="">
+                            <input
+                                class="form-control my-form"
+                                type="text"
+                                placeholder="Name"
+                            />
+                            <input
+                                class="form-control my-form"
+                                type="email"
+                                placeholder="Email Andress"
+                            />
+                            <input
+                                class="form-control my-form"
+                                type="number"
+                                placeholder="Phone Number"
+                            />
+                            <div class="form-floating">
+                                <textarea
+                                    class="form-control my-form"
+                                    placeholder="Leave a comment here"
+                                    id="floatingTextarea2"
+                                    style="height: 100px"
+                                ></textarea>
+                                <label for="floatingTextarea2">Message</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="button pb-4 mb-3">
                         <button type="button" class="btn btn-success">
                             Send
                         </button>
@@ -228,20 +247,47 @@
         <footer>
             <div class="container-fluid bg-header-footer">
                 <div class="container-lg container-md container-sm">
-                    <div class="row text-center">
-                        <div class="col-lg-4 col-md-4 col-sm-1">LOCATION</div>
-                        <div class="col-lg-4 col-md-4 col-sm-1">
-                            ARAUND THE WEB
+                    <div class="row g-3 text-center text-light p-2">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <h4>LOCATION</h4>
+                            <p class="fs-6">
+                                2215 Kohn Daniel Drive Clark , MO 54243
+                            </p>
                         </div>
-                        <div class="col-lg-4 col-md-4 col-sm-1">
-                            ABOUT FREELANCE
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <h4>AROUND THE WEB</h4>
+                            <p>
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-google"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-linkedin"></i>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <h4>ABOUT FREELENCE</h4>
+                            <p class="fs-6">
+                                Freelance is a free to use, open source
+                                Bootstrap theme created by
+                                <span>
+                                    <a
+                                        class="link-opacity-75-hover text-decoration-none text-success-emphasis"
+                                        href="#"
+                                    >
+                                        Start Bootstrap
+                                    </a>
+                                </span>
+                                .
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-fluid bg-footer">
                 <div class="container-lg container-md container-sm">
-                    <h3 class="text-footer text-center">hello</h3>
+                    <h6 class="text-footer text-center text-light">
+                        Copyright <i class="bi bi-c-circle"></i> Your Website
+                        2019
+                    </h6>
                 </div>
             </div>
         </footer>

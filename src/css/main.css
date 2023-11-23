@@ -12,20 +12,28 @@ img {
     margin-top: 30px;
     margin-bottom: 15px;
 }
-.card-text {
-    margin-bottom: 30px;
-}
-.card-title {
-    margin-bottom: 20px;
-}
-.icon {
-    display: flex;
-    justify-content: center;
-}
+
 .card-body {
     text-align: center;
     padding-bottom: 30px;
 }
 .bg-main-column .container .portfolio .title {
     font-size: 2rem;
+}
+.my-form {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.bar {
+    width: 10%;
+    height: 0;
+    margin: 7px 28px;
+}
+.bar-white {
+    border: 1px solid white;
+}
+.bar-black {
+    border: 1px solid black;
 }
